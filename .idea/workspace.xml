@@ -11,6 +11,9 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
@@ -104,6 +107,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kKdr1K2cePTdimePlVBHn40mrY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -115,6 +119,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OSPanel\domains\apibots\app\Http\Controllers" />
+      <recent name="E:\OSPanel\domains\apibots\app\Http\Controllers\api\v1" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -131,7 +141,21 @@
       <option name="presentableId" value="Default" />
       <updated>1605453411755</updated>
       <workItem from="1605453412838" duration="1756000" />
-      <workItem from="1605455584548" duration="705000" />
+      <workItem from="1605455584548" duration="1166000" />
+      <workItem from="1605457748288" duration="950000" />
+      <workItem from="1605531959574" duration="2125000" />
+      <workItem from="1605534481196" duration="1263000" />
+      <workItem from="1605536432955" duration="1801000" />
+      <workItem from="1605538280652" duration="1579000" />
+      <workItem from="1605610190144" duration="1779000" />
+      <workItem from="1605612182907" duration="78000" />
+      <workItem from="1605612435865" duration="1647000" />
+      <workItem from="1605614408711" duration="518000" />
+      <workItem from="1605619107743" duration="1766000" />
+      <workItem from="1605621028642" duration="1869000" />
+      <workItem from="1605622998831" duration="1760000" />
+      <workItem from="1605624803177" duration="2204000" />
+      <workItem from="1605697897076" duration="384000" />
     </task>
     <servers />
   </component>
@@ -151,6 +175,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605455103578" />
+    <state x="558" y="135" key="NewPhpClassDialog" timestamp="1605624047193">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="558" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1605624047193" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1605455111540">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
