@@ -34,20 +34,9 @@
 
 ## Дамп базы данный apibots.sql;
 
-
-## Пароль для админа:
-- Email    : 1@1.
-- Password : 123456789.
-
-## Стартовая страница:
-- public\index.php.
-
 ## Использованы :
 - Laravel (5.8).
 - tymon/jwt-auth.
-
-
-
 
 ## Список API routers с методами
 
@@ -91,7 +80,7 @@
 1-Ответ 200
 2-Тело ответа на запрос
 {
-    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU2MTM2ODksImV4cCI6MTYwNTYxNzI4OSwibmJmIjoxNjA1NjEzNjg5LCJqdGkiOiJsSDhUZXYxckg4RFhYR0FEIiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.iMO1vKkR-ie9Qak9EmeBp9J6p_gRZbYiiqC_Sfi9bOc",
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU3MDA0MzUsImV4cCI6MTYwNTcwNDAzNSwibmJmIjoxNjA1NzAwNDM1LCJqdGkiOiJGYWF2bU5CNFptdHB3TFBTIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.pufA0uPu88YrqP0FzDQaJNhAh909uWdo20DW6CEcNs4",
     "token_type": "bearer",
     "expires_in": 3600
 } 
@@ -105,7 +94,7 @@
 ## LOGOUT метод:POST, URL:http:{URL}/api/v1/logout
 Параметры запроса:
     $data=  array(
-        'Authorization'=> ' "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU2MjE0MTMsImV4cCI6MTYwNTYyNTAxMywibmJmIjoxNjA1NjIxNDEzLCJqdGkiOiJDN3JpTGJZSmJxaDY2c2FVIiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.I9fXAZhcWmBewDKKpXwBGdL1QXjq53vu5h8IZutaEG4",
+        'Authorization'=> '"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU2MjE0MTMsImV4cCI6MTYwNTYyNTAxMywibmJmIjoxNjA1NjIxNDEzLCJqdGkiOiJDN3JpTGJZSmJxaDY2c2FVIiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.I9fXAZhcWmBewDKKpXwBGdL1QXjq53vu5h8IZutaEG4",
     );
     
 Нет ошибок :    
@@ -123,7 +112,7 @@
 ## ACCOUNT метод:POST, URL:http:{URL}/api/v1/account
 Параметры запроса:
     $data=  array(
-        'Authorization'=> ' "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU2MjE0MTMsImV4cCI6MTYwNTYyNTAxMywibmJmIjoxNjA1NjIxNDEzLCJqdGkiOiJDN3JpTGJZSmJxaDY2c2FVIiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.I9fXAZhcWmBewDKKpXwBGdL1QXjq53vu5h8IZutaEG4",
+        'Authorization'=> ' "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU2MjE0MTMsImV4cCI6MTYwNTYyNTAxMywibmJmIjoxNjA1NjIxNDEzLCJqdGkiOiJDN3JpTGJZSmJxaDY2c2FVIiwic3ViIjo2LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.I9fXAZhcWmBewDKKpXwBGdL1QXjq53vu5h8IZutaEG4",
     );
 Нет ошибок :    
 1-Ответ 200
@@ -143,10 +132,10 @@
     "message": "Unauthenticated."
 }  
 
-## ALL BOTS метод:POST, URL:http:{URL}/api/v1/index
+## ALL BOTS метод:GET, URL:http:{URL}/api/v1/bots/index
 Параметры запроса:
     $data=  array(
-        'Authorization'=> ' "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU2MjU4MzYsImV4cCI6MTYwNTYyOTQzNiwibmJmIjoxNjA1NjI1ODM2LCJqdGkiOiJoUDZuUm5BRzFpdW5uQnNPIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.VCwxf7Lyijm3OKvB-SO_ELzT-uPsmnPxqVnIpH4aq4k",
+        'Authorization'=> ' "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU2MjU4MzYsImV4cCI6MTYwNTYyOTQzNiwibmJmIjoxNjA1NjI1ODM2LCJqdGkiOiJoUDZuUm5BRzFpdW5uQnNPIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.VCwxf7Lyijm3OKvB-SO_ELzT-uPsmnPxqVnIpH4aq4k",
     );
 Нет ошибок :    
 1-Ответ 200
@@ -179,3 +168,85 @@
 {
     "message": "Unauthenticated."
 } 
+## DESTROY BOT метод:POST, URL:http:{URL}/api/v1/bots/{id}/destroy
+Параметры запроса:
+    $data=  array(
+        'Authorization'=> ' "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU3MDQ2MjYsImV4cCI6MTYwNTcwODIyNiwibmJmIjoxNjA1NzA0NjI2LCJqdGkiOiJKc1dRTDB1U1JIR2FpNzJIIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.y4gC0G80W5Vdob_QqHH_Gce5N3LX6pzOMBxmSt5Elx4",
+    );
+Нет ошибок :    
+1-Ответ 200
+2-Тело ответа на запрос
+{
+    "success": true,
+    "data": {
+        "bot ": 11
+    },
+    "message": "Bot has been successfully deleted!"
+}
+Ошибка :    
+1-Ответ 401
+2-Тело ответа на запрос
+{
+    "success": false,
+    "message": "Delete Error.",
+    "data": {
+        "bot ": 12
+    }
+}
+## SHOW BOT метод:GET, URL:http:{URL}/api/v1/bots/{id}/show
+Параметры запроса:
+    $data=  array(
+        'Authorization'=> ' "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU3MDQ2MjYsImV4cCI6MTYwNTcwODIyNiwibmJmIjoxNjA1NzA0NjI2LCJqdGkiOiJKc1dRTDB1U1JIR2FpNzJIIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.y4gC0G80W5Vdob_QqHH_Gce5N3LX6pzOMBxmSt5Elx4",
+    );
+Нет ошибок :    
+1-Ответ 200
+2-Тело ответа на запрос
+{
+    "success": true,
+    "data": {
+        "id": 1,
+        "user_id": 1,
+        "name": "deserunt",
+        "description": "There was a little.",
+        "created_at": "2020-11-18 11:52:54",
+        "updated_at": "2020-11-18 11:52:54"
+    },
+    "message": "Bot received!"
+}
+Ошибка :    
+1-Ответ 401
+2-Тело ответа на запрос
+{
+    "success": false,
+    "message": "Load bot error.",
+    "data": {
+        "bot ": "2"
+    }
+}
+
+## NEW BOT метод:POST, URL:http:{URL}/api/v1/bots/create
+Параметры запроса:
+    $data=  array(
+        'Authorization'=> ' "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU3MDQ2MjYsImV4cCI6MTYwNTcwODIyNiwibmJmIjoxNjA1NzA0NjI2LCJqdGkiOiJKc1dRTDB1U1JIR2FpNzJIIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.y4gC0G80W5Vdob_QqHH_Gce5N3LX6pzOMBxmSt5Elx4",
+    );
+Нет ошибок :    
+1-Ответ 200
+2-Тело ответа на запрос
+{
+    "success": true,
+    "data": {
+        "bot ": 14
+    },
+    "message": "The new bot has been created!"
+}
+Ошибка :    
+1-Ответ 401
+2-Тело ответа на запрос
+{
+    "success": false,
+    "message": "An error occurred while creating a new bot.",
+    "data": 
+    {  
+    }
+}
+

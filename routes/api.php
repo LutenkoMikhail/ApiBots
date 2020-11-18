@@ -23,6 +23,14 @@ Route::group([
     Route::post('registration', 'AuthController@registration');
     Route::post('logout', 'AuthController@logout');
     Route::post('account', 'AuthController@account');
+});
+Route::group([
+    'prefix' => 'v1/bots'
+], function () {
     Route::get('index', 'Api\v1\BotController@index');
+    Route::get('{id}/show', 'Api\v1\BotController@show');
+    Route::post('{id}/destroy', 'Api\v1\BotController@destroy');
+    Route::post('create', 'Api\v1\BotController@store');
+
 
 });
