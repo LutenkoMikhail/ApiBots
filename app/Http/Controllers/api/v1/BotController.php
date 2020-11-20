@@ -25,7 +25,10 @@ class BotController extends BaseController
     public function index()
     {
         $allBots = auth()->user()->bots()->orderby('updated_at', 'desc')->get();
-        return $this->sendResponse($allBots->toArray(), 'Bots retrieved successfully.');
+        if (count($allBots)) {
+            return $this->sendResponse($allBots->toArray(), 'Bots retrieved successfully.');
+        }
+        return $this->sendResponse($allBots->toArray(), 'No bots.');
     }
 
     /**
@@ -38,7 +41,7 @@ class BotController extends BaseController
     {
         if (auth()->user()) {
             $bot = Bot::where('id', '=', $id)->first();
-            if ($bot && $bot->id === auth()->user()->id) {
+            if ($bot && $bot->user_id === auth()->user()->id) {
                 return $this->sendResponse($bot, 'Bot received!');
             }
             return $this->sendError('Load bot error.', ['bot ' => $id], 400);
@@ -56,7 +59,6 @@ class BotController extends BaseController
     {
         if (auth()->user()) {
             $input = $request->all();
-
             $validator = Validator::make($input, [
                 'name' => ['required', 'string', 'max:255'],
                 'description' => ['string', 'max:255']
@@ -65,18 +67,17 @@ class BotController extends BaseController
             if ($validator->fails()) {
                 return $this->sendError('Validation Error.', $validator->errors(), 400);
             }
+
             $bot = new \App\Bot();
             $bot->name = $request->name;
             $bot->description = $request->description;
-            $bot->user_id =auth()->user()->id;
-
+            $bot->user_id = auth()->user()->id;
             if ($bot->save()) {
                 return $this->sendResponse(['bot ' => $bot->id], 'The new bot has been created!');
             }
             return $this->sendError('An error occurred while creating a new bot.', [], 400);
         }
     }
-
 
 
     /**
@@ -88,7 +89,30 @@ class BotController extends BaseController
      */
     public function update(Request $request, $id)
     {
-        //
+        if (auth()->user()) {
+            $input = $request->all();
+            $validator = Validator::make($input, [
+                'name' => ['required', 'string', 'max:255'],
+                'description' => ['string', 'max:255']
+            ]);
+
+            if ($validator->fails()) {
+                return $this->sendError('Validation Error.', $validator->errors(), 400);
+            }
+            $bot = Bot::where('id', '=', $id)->first();
+
+            if ($bot && $bot->user_id === auth()->user()->id) {
+
+                $bot->name = $request->name;
+                $bot->description = $request->description;
+                if ($bot->save()) {
+                    return $this->sendResponse($bot, 'Bot changed!');
+                }
+
+                return $this->sendError('An error occurred while making changes to the bot.', [], 400);
+            }
+        }
+        return response()->json(['error' => 'Unauthorized'], 401);
     }
 
     /**

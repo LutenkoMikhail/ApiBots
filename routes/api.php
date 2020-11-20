@@ -31,6 +31,7 @@ Route::group([
     Route::get('{id}/show', 'Api\v1\BotController@show');
     Route::post('{id}/destroy', 'Api\v1\BotController@destroy');
     Route::post('create', 'Api\v1\BotController@store');
+    Route::post('{id}/update', 'Api\v1\BotController@update');
 
 
 });

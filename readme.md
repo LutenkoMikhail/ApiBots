@@ -1,4 +1,3 @@
-
 ## Техническое задание.
 
 Требуется создать серверную часть веб-сервиса по созданию новостных ботов
@@ -25,7 +24,7 @@
 ## Установка:
 ## Выполнить команду: 
 - composer install (update).
-- php artisan storage:link.
+- php artisan storage:link(при необходимости).
 - php artisan migrate --seed.
 - php artisan optimize:clear(при необходимости).
 - npm install (при необходимости).
@@ -247,6 +246,38 @@
     "message": "An error occurred while creating a new bot.",
     "data": 
     {  
+    }
+}
+## EDIT BOT метод:POST, URL:http:{URL}/api/v1/bots/update
+Параметры запроса:
+    $data=  array(
+        'Authorization'=>"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU3OTMzODQsImV4cCI6MTYwNTc5Njk4NCwibmJmIjoxNjA1NzkzMzg0LCJqdGkiOiJ6aVlicXgyS1JDTm1UNG5ZIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.FkqPwgkILaMXZ_V87-ZPAI-_pJDK3fXII_IoVGbRD7A",
+    );
+Нет ошибок :    
+1-Ответ 200
+2-Тело ответа на запрос
+{
+    "success": true,
+    "data": {
+        "id": 12,
+        "user_id": 1,
+        "name": "77777777777777",
+        "description": "777777777777",
+        "created_at": "2020-11-19 13:25:40",
+        "updated_at": "2020-11-19 14:20:49"
+    },
+    "message": "Bot changed!"
+}
+Ошибка :    
+1-Ответ 401
+2-Тело ответа на запрос
+{
+    "success": false,
+    "message": "Validation Error.",
+    "data": {
+        "name": [
+            "The name field is required."
+        ]
     }
 }
 
