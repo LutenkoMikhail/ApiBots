@@ -82,16 +82,16 @@
     *     );
     
 * Нет ошибок :    
-* 1-Ответ 200
-* 2-Тело ответа на запрос
-{
+  * 1-Ответ 200
+  * 2-Тело ответа на запрос
+     *  {
      *  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU3MDA0MzUsImV4cCI6MTYwNTcwNDAzNSwibmJmIjoxNjA1NzAwNDM1LCJqdGkiOiJGYWF2bU5CNFptdHB3TFBTIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.pufA0uPu88YrqP0FzDQaJNhAh909uWdo20DW6CEcNs4",
      *  "token_type": "bearer",
      *  "expires_in": 3600
-} 
+     *  } 
 * Ошибка :    
-* 1-Ответ 401
-* 2-Тело ответа на запрос
+  * 1-Ответ 401
+  * 2-Тело ответа на запрос
      * {
      * "error": "Unauthorized"
      * }
@@ -230,7 +230,6 @@
     * }
 
 ## NEW BOT метод:POST, URL:http:{URL}/api/v1/bots/create
-<<<<<<< HEAD
 * Параметры запроса:
     *     $data=  array(
     *         'Authorization'=> ' "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU3MDQ2MjYsImV4cCI6MTYwNTcwODIyNiwibmJmIjoxNjA1NzA0NjI2LCJqdGkiOiJKc1dRTDB1U1JIR2FpNzJIIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.y4gC0G80W5Vdob_QqHH_Gce5N3LX6pzOMBxmSt5Elx4",
@@ -296,7 +295,7 @@
 * Нет ошибок :    
 * 1-Ответ 200
 * 2-Тело ответа на запрос
-"success": true,
+    *     "success": true,
     *     "data": {
     *         "DOCS": "метод:GET, URL:http:{URL}/api/v1/bots",
     *         "REGISTER": "метод:POST, URL:http:{URL}/api/v1/registration",
@@ -317,29 +316,5 @@
     * {
     *     "message": "Unauthenticated."
     * }     
-=======
-Параметры запроса:
-    $data=  array(
-        'Authorization'=> ' "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU3MDQ2MjYsImV4cCI6MTYwNTcwODIyNiwibmJmIjoxNjA1NzA0NjI2LCJqdGkiOiJKc1dRTDB1U1JIR2FpNzJIIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.y4gC0G80W5Vdob_QqHH_Gce5N3LX6pzOMBxmSt5Elx4",
-    );
-Нет ошибок :    
-1-Ответ 200
-2-Тело ответа на запрос
-{
-    "success": true,
-    "data": {
-        "bot ": 14
-    },
-    "message": "The new bot has been created!"
-}
-Ошибка :    
-1-Ответ 401
-2-Тело ответа на запрос
-{
-    "success": false,
-    "message": "An error occurred while creating a new bot.",
-    "data": 
-    {  
-    }
-}
+
 
