@@ -32,6 +32,27 @@ class BotController extends BaseController
     }
 
     /**
+     * @return \Illuminate\Http\Response
+     */
+    public function docs()
+    {
+        $apiDocs = [
+            'DOCS' => 'метод:GET, URL:http:{URL}/api/v1/bots',
+            'REGISTER' => 'метод:POST, URL:http:{URL}/api/v1/registration',
+            'LOGIN ' => 'метод:GET, URL:http:{URL}/api/v1/login',
+            'LOGOUT' => 'метод:POST, URL:http:{URL}/api/v1/logout',
+            'ACCOUNT' => 'метод:POST, URL:http:{URL}/api/v1/account',
+            'ALL BOTS' => 'метод:GET, URL:http:{URL}/api/v1/bots/index',
+            'DESTROY BOT' => 'метод:POST, URL:http:{URL}/api/v1/bots/{id}/destroy',
+            'SHOW BOT' => 'метод:GET, URL:http:{URL}/api/v1/bots/{id}/show',
+            'NEW BOT' => 'метод:POST, URL:http:{URL}/api/v1/bots/create',
+            'EDIT BOT' => 'метод:POST, URL:http:{URL}/api/v1/bots/update'
+
+        ];
+        return $this->sendResponse($apiDocs, 'API DOCS BOTS .');
+    }
+
+    /**
      * Display the specified resource.
      *
      * @param int $id

@@ -87,6 +87,29 @@
                 <div class="links">
                     Users  [ {{$countUsers}} ]
                     Bots   [ {{$countBots}} ]
+                    <hr>
+                    <h1>API HELP</h1>
+                    <hr>
+                    DOCS: метод:GET, URL:http:{URL}/api/v1/bots
+                    <hr>
+                    REGISTER: метод:POST, URL:http:{URL}/api/v1/registration
+                    <hr>
+                    LOGIN  метод:GET, URL:http:{URL}/api/v1/login
+                    <hr>
+                    LOGOUT метод:POST, URL:http:{URL}/api/v1/logout
+                    <hr>
+                    ACCOUNT метод:POST, URL:http:{URL}/api/v1/account
+                    <hr>
+                    ALL BOTS метод:GET, URL:http:{URL}/api/v1/bots/index
+                    <hr>
+                    DESTROY BOT метод:POST, URL:http:{URL}/api/v1/bots/{id}/destroy
+                    <hr>
+                    SHOW BOT метод:GET, URL:http:{URL}/api/v1/bots/{id}/show
+                    <hr>
+                    NEW BOT метод:POST, URL:http:{URL}/api/v1/bots/create
+                    <hr>
+                    EDIT BOT метод:POST, URL:http:{URL}/api/v1/bots/update
+                    <hr>
                 </div>
             </div>
         </div>
