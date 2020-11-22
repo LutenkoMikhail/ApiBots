@@ -24,7 +24,7 @@
 ## Установка:
 ## Выполнить команду: 
 - composer install (update).
-- php artisan storage:link(при необходимости).
+- php artisan storage:link.
 - php artisan migrate --seed.
 - php artisan optimize:clear(при необходимости).
 - php artisan jwt:secret.
@@ -230,6 +230,7 @@
     * }
 
 ## NEW BOT метод:POST, URL:http:{URL}/api/v1/bots/create
+<<<<<<< HEAD
 * Параметры запроса:
     *     $data=  array(
     *         'Authorization'=> ' "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU3MDQ2MjYsImV4cCI6MTYwNTcwODIyNiwibmJmIjoxNjA1NzA0NjI2LCJqdGkiOiJKc1dRTDB1U1JIR2FpNzJIIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.y4gC0G80W5Vdob_QqHH_Gce5N3LX6pzOMBxmSt5Elx4",
@@ -316,4 +317,29 @@
     * {
     *     "message": "Unauthenticated."
     * }     
+=======
+Параметры запроса:
+    $data=  array(
+        'Authorization'=> ' "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE2MDU3MDQ2MjYsImV4cCI6MTYwNTcwODIyNiwibmJmIjoxNjA1NzA0NjI2LCJqdGkiOiJKc1dRTDB1U1JIR2FpNzJIIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.y4gC0G80W5Vdob_QqHH_Gce5N3LX6pzOMBxmSt5Elx4",
+    );
+Нет ошибок :    
+1-Ответ 200
+2-Тело ответа на запрос
+{
+    "success": true,
+    "data": {
+        "bot ": 14
+    },
+    "message": "The new bot has been created!"
+}
+Ошибка :    
+1-Ответ 401
+2-Тело ответа на запрос
+{
+    "success": false,
+    "message": "An error occurred while creating a new bot.",
+    "data": 
+    {  
+    }
+}
 

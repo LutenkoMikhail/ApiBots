@@ -58,9 +58,6 @@ class User extends Authenticatable implements JWTSubject
         return [];
     }
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
     public function bots()
     {
         return $this->hasMany(\App\Bot::class);

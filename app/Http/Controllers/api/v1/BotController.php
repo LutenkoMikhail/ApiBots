@@ -25,13 +25,11 @@ class BotController extends BaseController
     public function index()
     {
         $allBots = auth()->user()->bots()->orderby('updated_at', 'desc')->get();
-        if (count($allBots)) {
-            return $this->sendResponse($allBots->toArray(), 'Bots retrieved successfully.');
-        }
-        return $this->sendResponse($allBots->toArray(), 'No bots.');
+        return $this->sendResponse($allBots->toArray(), 'Bots retrieved successfully.');
     }
 
     /**
+     * Display a listing of the api docs.
      * @return \Illuminate\Http\Response
      */
     public function docs()
@@ -155,4 +153,5 @@ class BotController extends BaseController
         }
         return response()->json(['error' => 'Unauthorized'], 401);
     }
+
 }

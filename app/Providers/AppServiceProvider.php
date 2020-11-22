@@ -28,7 +28,6 @@ class AppServiceProvider extends ServiceProvider
     {
         $countUsers=0;
         $countBots=0;
-
         if (Schema::hasTable('users')) {
             $countUsers = User::get()->count();
             view()->share('countUsers', $countUsers);

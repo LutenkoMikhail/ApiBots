@@ -161,6 +161,7 @@
       <workItem from="1605703843110" duration="1955000" />
       <workItem from="1605705844410" duration="1779000" />
       <workItem from="1605707732677" duration="1769000" />
+<<<<<<< HEAD
       <workItem from="1605709580979" duration="499000" />
       <workItem from="1605776478389" duration="1028000" />
       <workItem from="1605792305151" duration="4111000" />
@@ -172,6 +173,9 @@
       <workItem from="1606043086745" duration="1776000" />
       <workItem from="1606044912554" duration="1699000" />
       <workItem from="1606046763501" duration="1140000" />
+=======
+      <workItem from="1605709580979" duration="313000" />
+>>>>>>> parent of d1e6a62... Refactoring BotController
     </task>
     <servers />
   </component>
@@ -195,10 +199,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605709080597" />
-    <state x="592" y="207" key="FileChooserDialogImpl" timestamp="1605777538809">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1605455103578">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="592" y="207" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605777538809" />
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605455103578" />
     <state x="558" y="135" key="NewPhpClassDialog" timestamp="1605624047193">
       <screen x="0" y="0" width="1536" height="824" />
